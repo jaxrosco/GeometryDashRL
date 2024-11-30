@@ -30,13 +30,13 @@ This is handled by stable-baselines3 and really abstracts the process (yippee!):
 
 ## Running it yourself
 With the requirements satisfied:
-  1. In options under gameplay, turn off auto retry
-  2. In graphics, make sure the game is set to medium texture quality
-  3. In advanced video settings, turn off vertical sync
-  4. Ensure the game is in windowed mode running at 1080p, this is because of the menu template
-    4.1. If you'd like to run the game at another resolution, take a screenshot of any level's death menu and replace the template, it should work regardless of level as the matching is only required to be 70%
-  5. When ready, navigate to the level you wish to train the model on and start the training portion
-    5.1. Sometimes, Windows really doesn't like us moving things around programatically so if SetForegroundWindow() is not working, try using SetActiveWindow() instead in the gym environment
+1. In options under gameplay, turn off auto retry
+2. In graphics, make sure the game is set to medium texture quality
+3. In advanced video settings, turn off vertical sync
+4. Ensure the game is in windowed mode running at 1080p, this is because of the menu template
+  4.1. If you'd like to run the game at another resolution, take a screenshot of any level's death menu and replace the template, it should work regardless of level as the matching is only required to be 70%
+5. When ready, navigate to the level you wish to train the model on and start the training portion
+  5.1. Sometimes, Windows really doesn't like us moving things around programatically so if `win32gui.SetForegroundWindow(hwnd)` is not working, try using `win32gui.SetActiveWindow(hwnd)` instead in the gym environment
 
 ## Acknowledgements
 None of this project would have been possible without these libraries:
