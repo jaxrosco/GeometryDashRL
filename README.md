@@ -34,9 +34,9 @@ With the requirements satisfied:
 2. In graphics, make sure the game is set to medium texture quality
 3. In advanced video settings, turn off vertical sync
 4. Ensure the game is in windowed mode running at 1080p, this is because of the menu template
-  4.1. If you'd like to run the game at another resolution, take a screenshot of any level's death menu and replace the template, it should work regardless of level as the matching is only required to be 70%
+    - If you'd like to run the game at another resolution, take a screenshot of any level's death menu and replace the template, it should work regardless of level as the matching is only required to be 70%
 5. When ready, navigate to the level you wish to train the model on and start the training portion
-  5.1. Sometimes, Windows really doesn't like us moving things around programatically so if `win32gui.SetForegroundWindow(hwnd)` is not working, try using `win32gui.SetActiveWindow(hwnd)` instead in the gym environment
+    - Sometimes, Windows really doesn't like us moving things around programatically so if `win32gui.SetForegroundWindow(hwnd)` is not working, try using `win32gui.SetActiveWindow(hwnd)` instead in the gym environment
 
 ## Acknowledgements
 None of this project would have been possible without these libraries:
